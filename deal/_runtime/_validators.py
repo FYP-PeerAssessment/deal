@@ -262,7 +262,7 @@ class RaisesValidator(Validator):
         for exception in self.exceptions:
             if issubclass(exc_type, exception):
                 return
-        raise self._exception() from exc_type
+        raise self._exception() from exc
 
 
 class ReasonValidator(Validator):
